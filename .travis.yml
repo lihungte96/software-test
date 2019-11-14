@@ -14,4 +14,4 @@ branches:
   only:
     - master
 after_success:
-  - codecov -X gcov
+    - bash <(curl -s https://codecov.io/bash)
